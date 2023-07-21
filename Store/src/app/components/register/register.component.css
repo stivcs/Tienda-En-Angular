@@ -1,0 +1,149 @@
+.registerContainer {
+    background-color: white; /* Establece el color de fondo del contenedor en blanco */
+    width: 100vw; /* Establece el ancho del contenedor al 100% del ancho de la ventana */
+    height: 80vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+    display: flex; /* Hace que el contenedor sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+    align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
+    margin-bottom: 50px;
+}   
+
+.titleRegisterContainer {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin: 20px 0 20px 0; /* Establece el margen superior e inferior en 20px y el margen izquierdo y derecho en 0 */
+    font-family: Helvetica, sans-serif; /* Establece la familia de fuentes a Helvetica o cualquier fuente sans-serif */
+    font: bold; /* Establece el peso de la fuente en negrita */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+}
+
+.titleRegisterContainer h1 {
+    width: 100%; /* Establece el ancho del elemento h1 al 100% de su contenedor */
+}
+
+.principalRegisterContainer {
+    display: block; /* Establece la propiedad de visualización en bloque, convirtiéndolo en un elemento de nivel de bloque */
+    background-color: white; /* Establece el color de fondo del contenedor en blanco */
+    width: 47%; /* Establece el ancho del contenedor al 47% */
+    height: 95%; /* Establece la altura del contenedor al 95% */
+    box-shadow: 0px 3px 6px #00000029; /* Agrega un efecto de sombra con los valores especificados */
+    border: 1px solid #C4C4C4; /* Establece un borde sólido de 1px con el color especificado */
+    border-radius: 50px; /* Establece el radio de borde a 50px, creando bordes redondeados */
+    opacity: 1; /* Establece la opacidad del contenedor en 1 (completamente visible) */
+}
+
+.buttonRegisterContainer {
+    display: flex; /* Hace que el contenedor sea un contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente dentro del contenedor */
+    align-items: center; /* Centra el contenido verticalmente dentro del contenedor */
+}
+
+.principalContainerRegisterFrom form {
+    display: flex; /* Hace que el formulario sea un contenedor flexible */
+    justify-content: space-between; /* Distribuye el espacio disponible entre los elementos del formulario */
+    align-items: center; /* Centra los elementos verticalmente dentro del formulario */
+    flex-direction: column; /* Establece la dirección de los elementos del formulario en columna */
+}
+
+.usernameRegisterContainer,
+.paswordRegisterContainer,
+.fullNameRegisterContainer,
+.emailRegisterContainer,
+.phoneRegisterContainer,
+.adressRegisterContainer {
+    font-family: Helvetica, sans-serif; /* Establece la familia de fuentes a Helvetica o cualquier fuente sans-serif */
+    font: bold; /* Establece el peso de la fuente en negrita */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+    width: 80%; /* Establece el ancho de los contenedores al 80% */
+    display: flex; /* Hace que los contenedores sean contenedores flexibles */
+    flex-direction: column; /* Establece la dirección de los elementos dentro de los contenedores en columna */
+    margin: 10px 10px; /* Establece un margen de 10px en la parte superior e inferior y 10px en los lados izquierdo y derecho */
+}
+
+.usernameRegisterContainer input,
+.paswordRegisterContainer input,
+.fullNameRegisterContainer input,
+.emailRegisterContainer input,
+.phoneRegisterContainer input,
+.adressRegisterContainer input {
+    padding: 0 10px; /* Establece un relleno de 0 en la parte superior e inferior y 10px en los lados izquierdo y derecho */
+    font-size: 20px; /* Establece el tamaño de fuente en 20px */
+}
+
+.buttonRegisterContainer {
+    font-family: Helvetica, sans-serif; /* Establece la familia de fuentes a Helvetica o cualquier fuente sans-serif */
+    font: bold; /* Establece el peso de la fuente en negrita */
+    font-weight: bold; /* Establece el peso de la fuente en negrita */
+    width: 40%; /* Establece el ancho del contenedor al 40% */
+    display: flex; /* Hace que el contenedor sea un contenedor flexible */
+    flex-direction: column; /* Establece la dirección de los elementos dentro del contenedor en columna */
+    margin: 5px 10px; /* Establece un margen de 5px en la parte superior e inferior y 10px en los lados izquierdo y derecho */
+}
+
+.buttonRegisterContainer button {
+    background-color: transparent; /* Establece el color de fondo del botón como transparente */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa por encima del botón */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambiar el color de fondo durante 0.3 segundos */
+}
+
+#buttonRegister:hover {
+    background-color: #131313; /* Cambia el color de fondo del botón cuando se pasa el cursor por encima */
+}
+
+#usernameRegister,
+#passwordRegister,
+#fullNameRegister,
+#emailRegister,
+#phoneRegister,
+#adressRegister {
+    width: 100%; /* Establece el ancho de los elementos al 100% */
+    height: 40px; /* Establece la altura de los elementos en 40px */
+    border: 1px solid #707070; /* Establece un borde sólido de 1px con el color especificado */
+    background: #FFFFFF; /* Establece el color de fondo de los elementos en blanco */
+    border-radius: 23px; /* Establece el radio de borde en 23px, creando bordes redondeados */
+    opacity: 1; /* Establece la opacidad de los elementos en 1 (completamente visible) */
+}
+
+#buttonRegister {
+    color: white; /* Establece el color del texto del botón en blanco */
+    width: 100%; /* Establece el ancho del botón al 100% */
+    height: 40px; /* Establece la altura del botón en 40px */
+    background: #000000; /* Establece el color de fondo del botón en negro */
+    border-radius: 10px; /* Establece el radio de borde en 10px, creando bordes redondeados */
+}
+
+
+/* Estilos para dispositivos móviles (Samsung A10 y similares) */
+@media screen and (max-width: 680px) {
+    .registerContainer {
+      padding: 10px;
+    }
+  
+    .titleRegisterContainer {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+  
+    .principalRegisterContainer {
+      width: 95%;
+      height: 100%;
+    }
+  
+    .buttonRegisterContainer {
+      width: 80%;
+    }
+  
+    .usernameRegisterContainer,
+    .paswordRegisterContainer,
+    .fullNameRegisterContainer,
+    .emailRegisterContainer,
+    .phoneRegisterContainer,
+    .adressRegisterContainer {
+      width: 80%;
+      margin: 5px 0;
+    }
+  
+    .buttonRegisterContainer button {
+      height: 30px;
+    }
+  }

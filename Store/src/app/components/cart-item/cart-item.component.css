@@ -1,0 +1,127 @@
+
+
+.cartItem {
+  margin-left: 20vw;
+  background-color: transparent;
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+    justify-content: start;
+    margin-bottom: 10px; /* Define el margen inferior de los elementos */
+    width: 40vh;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .cartItem img{
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .cartItem:hover{
+    background-color: #e0e0e0;
+   box-shadow: 0 5px 10px #000000a4;
+  }
+  
+  @media screen and  (max-width:1600px ){
+    .cartItem {
+      margin-left: 12vw;
+        display: flex; /* Aplica el modelo de caja flexible */
+        align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+        justify-content: start;
+        margin-bottom: 10px; /* Define el margen inferior de los elementos */
+        width: 35vh;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+  }
+
+  @media screen and  (max-width:1200px ){
+    .cartItem {
+      margin-left: 10vw;
+        display: flex; /* Aplica el modelo de caja flexible */
+        align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+        justify-content: start;
+        margin-bottom: 10px; /* Define el margen inferior de los elementos */
+        width: 30vh;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+  }
+  @media screen and  (max-width:900px ){
+    .cartItem {
+      margin-left: 1vw;
+        display: flex; /* Aplica el modelo de caja flexible */
+        align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+        justify-content: start;
+        margin-bottom: 10px; /* Define el margen inferior de los elementos */
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+  }
+  /* Estilos que se aplican a las imágenes de los productos en el carrito de compras */
+  .cartItem img {
+    width: 80px; /* Define el ancho de la imagen */
+    height: 80px; /* Define la altura de la imagen */
+    border-radius: 8px; /* Define el radio de los bordes de la imagen */
+  }
+  
+  /* Estilos que se aplican a la descripción de los productos en el carrito de compras */
+  .description {
+    margin-left: 10px; /* Define el margen izquierdo de la descripción */
+  }
+  
+  /* Estilos que se aplican a los párrafos en los elementos del carrito de compras */
+  .cartItem p {
+    margin-bottom: 5px; /* Define el margen inferior de los párrafos */
+  }
+  
+  /* Estilos que se aplican a los controles de cantidad en los elementos del carrito de compras */
+  .countHandler {
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+  }
+  
+  /* Estilos que se aplican a los botones de disminuir/aumentar cantidad en los elementos del carrito de compras */
+  .countHandler button {
+    width: 20px; /* Define el ancho de los botones */
+    height: 20px; /* Define la altura de los botones */
+    background-color: #ffffff; /* Define el color de fondo de los botones */
+    color: #000000; /* Define el color de texto de los botones */
+    border: none; /* Quita el borde de los botones */
+    border-radius: 50%; /* Define el radio de los bordes de los botones para que sean circulares */
+    font-size: 14px; /* Define el tamaño de fuente de los botones */
+    font-weight: bold; /* Define el grosor de fuente de los botones */
+    cursor: pointer; /* Muestra un cursor al pasar por encima de los botones */
+    transition: background-color 0.3s; /* Agrega una transición al color de fondo de los botones */
+    margin: 0 5px; /* Define el margen horizontal de los botones */
+    text-align: center;
+  }
+  
+  /* Estilos que se aplican a los botones de disminuir/aumentar cantidad en los elementos del carrito de compras al pasar el cursor */
+  .countHandler button:hover {
+    color: white;
+    background-color: #000000; /* Define el color de fondo de los botones al pasar el cursor */
+  }
+  
+  /* Estilos que se aplican al campo de entrada de cantidad en los elementos del carrito de compras */
+  .countHandler input {
+    width: 50px; /* Define el ancho del campo de entrada */
+    height: 20px; /* Define la altura del campo de entrada */
+    text-align: center; /* Centra el texto dentro del campo de entrada */
+    border: 2px solid #162938; /* Define el borde del campo de entrada */
+    border-radius: 8px; /* Define el radio de los bordes del campo de entrada */
+    font-size: 14px; /* Define el tamaño de fuente del campo de entrada */
+    font-weight: bold; /* Define el grosor de fuente del campo de entrada */
+    margin: 0 5px; /* Define el margen horizontal del campo de entrada */
+    background-color: #f1f1f1; /* Define el color de fondo del campo de entrada */
+    transition: border-color 0.3s; /* Agrega una transición al color del borde del campo de entrada */
+    padding: 2px; /* Define el espacio interno del campo de entrada */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del campo de entrada */
+    pointer-events: none;
+  }
+  
+  /* Estilos que se aplican al campo de entrada de cantidad en los elementos del carrito de compras al enfocar */
+  .cartItem .countHandler input:focus {
+    outline: none; /* Quita el contorno al enfocar el campo de entrada */
+    border-color: #000000; /* Define el color del borde del campo de entrada al enfocar */
+  }

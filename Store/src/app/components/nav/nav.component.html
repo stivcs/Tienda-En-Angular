@@ -1,0 +1,68 @@
+<header>
+  <!-- Se define un navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!-- Se define un logo -->
+      <a class="navbar-logo" href="/"><img [src]="logo"></a>
+    </div>
+    <div class="navbar-links">
+      <!-- Botón con su evento para mostrar el menu responsive -->
+      <!-- Se define el botón para mostrar el menú responsive -->
+      <button href="" class="menu-button" (click)="toggleNavbar()">☰</button>
+      <!-- Se define el listado del menu -->
+      <ul [ngClass]="{ 'show': showNavbar }">
+        <!-- Se muestra un mensaje de bienvenida con el nombre de usuario -->
+        <li class="welcome">¡Bienvenido{{username}}!</li>
+        <!-- Se define un enlace para la página de productos -->
+        <li><a href="products">
+            <span class="material-symbols-outlined">
+              laundry
+            </span>
+            Productos
+          </a></li>
+        <!-- Se define un enlace para el carrito de compras -->
+        <li><a href="cart" *ngIf="isLoggedIn  && !isLoggedInAdmin">
+            <span class="material-symbols-outlined">
+              shopping_cart_checkout
+            </span>
+            Carrito
+          </a></li>
+        <!-- Se define un enlace para el dashboard -->
+        <li><a href="dashboard" *ngIf="isLoggedIn && isLoggedInAdmin">
+            <span class="material-symbols-outlined">
+              inventory
+            </span>
+            Dashboard
+          </a></li>
+        <!-- Se define un enlace para editar el perfil -->
+        <li><a href="adminprofile" *ngIf="isLoggedIn && isLoggedInAdmin">
+            <span class="material-symbols-outlined">
+              manage_accounts
+            </span>
+            Editar Perfil
+          </a></li>
+        <!-- Se define un enlace para la página "Acerca de" -->
+        <li><a href="about" *ngIf="!isLoggedInAdmin">
+            <span class="material-symbols-outlined">
+              perm_contact_calendar
+            </span>
+            ¿Quienes somos?
+          </a></li>
+        <!-- Se define un enlace para iniciar sesión -->
+        <li><a href="login" *ngIf="!isLoggedIn">
+            <span class="material-symbols-outlined">
+              login
+            </span>
+            Iniciar Sesion
+          </a></li>
+        <!-- Se define un enlace para cerrar sesión -->
+        <li><a href="logout" (click)="logoutPress()" *ngIf="isLoggedIn">
+            <span class="material-symbols-outlined">
+              logout
+            </span>
+            Cerrar Sesion
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+</header>

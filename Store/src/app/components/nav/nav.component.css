@@ -1,0 +1,143 @@
+/* Se importa fuente descargada para el proyecto */
+@font-face {
+  font-family: 'navFont';
+  src: url(../../../assets/nav/fonts/HelveticaNeueRegular.otf);
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-family: 'navFont', 'sans-serif';
+  font-size: 25px;
+}
+
+/* Estilos para el logotipo de la barra de navegación */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Estilos para los enlaces de la barra de navegación */
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-links li {
+  padding: 5px;
+}
+
+/* Estilos para los enlaces dentro de los elementos de lista de la barra de navegación */
+.navbar ul li a {
+  color: #707070;
+  text-decoration: none;
+  padding: 30px;
+
+}
+
+.navbar-links ul .welcome {
+  font-weight: bold;
+  color: #cfa414;
+}
+
+/* Estilos al pasar el cursor por encima de los enlaces de la barra de navegación */
+.navbar ul li a:hover {
+  color: #f5c62b;
+}
+
+/* Estilos para la imagen del logotipo en la barra de navegación */
+.navbar .navbar-brand .navbar-logo img {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 350px;
+}
+
+/* Estilos para el botón de menú en dispositivos móviles */
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 1443px){
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'navFont', 'sans-serif';
+    font-size: 18px;
+  }
+}
+
+/* Estilos para dispositivos con un ancho máximo de 1276px */
+@media (max-width: 1285px) {
+  .navbar-links ul {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 68px;
+    right: 0px;
+    background-color: #707070;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .navbar-links ul.show {
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-button {
+    display: block;
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navbar .navbar-brand .navbar-logo img {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 200px;
+  }
+
+  .navbar ul li a {
+    color: white;
+
+  }
+
+  .navbar ul li a:hover {
+    color: #f5c62b;
+  }
+
+  @media (max-width: 1334px){
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      font-family: 'navFont', 'sans-serif';
+      font-size: 11px;
+    }
+  }
+
+  /* Estilos para dispositivos con un ancho máximo de 280px */
+  @media (max-width: 280px) {
+    .navbar .navbar-brand .navbar-logo img {
+      margin-left: 30px;
+      margin-top: 10px;
+      width: 150px;
+    }
+  }
+}

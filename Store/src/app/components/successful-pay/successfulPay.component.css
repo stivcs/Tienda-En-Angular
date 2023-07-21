@@ -1,0 +1,180 @@
+
+
+/* Estilos para el componente de pago exitoso */
+.mainBoxPay {/* Contenedor principal */
+
+    margin-top: 10%;/* Margen superior */
+    margin-left: 30%;/* Margen izquierdo */
+    width: 35%;/* Ancho del componente */
+    min-width: 300px; /* Evita que el componente sea más pequeño que 300px de ancho */
+    display: flex;/* Permite que los elementos dentro del componente se acomoden en una sola línea */
+    flex-direction: column;/* Permite que los elementos dentro del componente se acomoden en una sola columna */
+    justify-content: center;/* Permite que los elementos dentro del componente se acomoden en el centro */
+    align-items: center;/* Permite que los elementos dentro del componente se acomoden en el centro */
+    height: 80%;/* Altura del componente */
+    border: 1px solid gray;/* Borde del componente */
+    border-radius: 10%;/* Borde redondeado del componente */
+    font-family: Helvetica;/* Fuente del componente */
+    box-shadow: 0px 10px 8px 0px black ;/* Sombra del componente */
+    margin-bottom: 15px;/* Margen inferior */
+    font-family: Helvetica;/* Fuente del componente */
+  }
+
+/* Estilos para el logo de KOAJ */
+.logoPay{
+    /* Contenedor del logo */
+    cursor: default;/* Permite que el cursor no cambie al pasar por encima del logo */
+    text-align: center;/* Permite que el texto del logo se acomode en el centro */
+    background-color: black;/* Color de fondo del logo */
+    color:white;/* Color del texto del logo */
+    font-size: 1rem;  /* Tamaño del texto del logo */
+    width: 20%;/* Ancho del logo */
+    min-width: 100px; /* Asegura que el texto "KOAJ" no se colapse en pantallas pequeñas */
+    height: 60%;/* Altura del logo */
+    margin: 10px 0px 40px 0px;/* Margen del logo */
+    border-radius: 8px;/* Borde redondeado del logo */
+    align-items: center;/* Permite que el texto del logo se acomode en el centro */
+}
+
+/* Estilos para el texto de KOAJ */
+.logoPay p{
+    /* Texto del logo */
+    border: 5px 5px 5px 5px;/* Borde del texto del logo */
+    font-size: 0.8rem;/* Tamaño del texto del logo */
+    font-family: Helvetica;/* Fuente del texto del logo */
+    font-weight: bold;/* Permite que el texto del logo sea negrita */
+    text-align: center;/* Permite que el texto del logo se acomode en el centro */
+    justify-content: center;/* Permite que el texto del logo se acomode en el centro */
+}
+
+/* Estilos para el contenedor de pago exitoso */
+.textPay{
+    /* Contenedor de pago exitoso */
+    cursor: default;/* Permite que el cursor no cambie al pasar por encima del texto */
+    text-align: center;/* Permite que el texto se acomode en el centro */
+    font-size: 1.5rem;/* Tamaño del texto */
+    font-family: Helvetica;/* Fuente del texto */
+    margin: 10px 50px 50px 50px;/* Margen del texto */
+    justify-content: center;/* Permite que el texto se acomode en el centro */
+}
+
+/* Estilos para el texto de pago exitoso */
+.textPay p{
+    /* Texto de pago exitoso */
+    font-weight: bold;/* Permite que el texto sea negrita */
+    text-decoration: none;/* Permite que el texto no tenga decoración */
+    font-family:  Helvetica;/* Fuente del texto */
+    color: black;/* Color del texto */
+    font-size: 20px;/* Tamaño del texto */
+    justify-content: center;/* Permite que el texto se acomode en el centro */
+    text-align: justify;/* Permite que el texto se acomode en el centro */
+}
+
+/* Estilos para el botón de pago exitoso */
+.buttomPay{/* Botón de pago exitoso */
+    
+    border: 5px solid black;/* Borde del botón */
+    width: 50%;/* Ancho del botón */
+    height: 30px;/* Altura del botón */
+    text-align: center;/* Permite que el texto del botón se acomode en el centro */
+    border-radius: 10px;/* Borde redondeado del botón */
+    cursor: pointer;/* Permite que el cursor cambie al pasar por encima del botón */
+    margin: 0px 0px 20px 0px;/* Margen del botón */
+    background-color: black;/* Color de fondo del botón */
+    
+}
+
+/* Estilos para el texto del botón de pago exitoso */
+.buttomPay a{/* Texto del botón de pago exitoso */
+    
+    font: bold;/* Permite que el texto sea negrita */
+    color: white;/* Color del texto */
+    font-size: 20px;/* Tamaño del texto */
+    text-decoration: none;/* Permite que el texto no tenga decoración */
+    font-family: Helvetica, sans-serif;/* Fuente del texto */
+}
+
+
+/* Media queries para pantallas más pequeñas */
+@media screen and (max-width: 768px) {/* Media queries para pantallas pequeñas */
+    .mainBoxPay {/* Contenedor principal */
+      width: 60%;/* Ancho del componente */
+      height: 50%;/* Altura del componente */
+      margin-left: 20%;/* Margen izquierdo */
+      border: 5px 5px 5px 5px;/* Borde del componente */
+    }
+  
+    .logoPay {
+      font-size: 1.2rem;/* Tamaño del logo */
+      height: 40px;/* Altura del logo */
+      margin: 10px 0px 30px 0px;/* Margen del logo */
+    }
+
+    .logoPay p{/* Texto del logo */
+        margin: 0px 0px 6px 0px;/* Margen del texto del logo */
+    }
+  
+    .textPay p {/* Texto de pago exitoso */
+      font-size: 18px;/* Tamaño del texto */
+    }
+  
+    .buttomPay {/* Botón de pago exitoso */
+      width: 70%;/* Ancho del botón */
+    }
+  }
+  
+  /* Media queries para pantallas aún más pequeñas (móviles) */
+  @media screen and (max-width: 480px) {/* Media queries para pantallas pequeñas */
+    .mainBoxPay {/* Contenedor principal */
+      width: 90%;/* Ancho del componente */
+      margin-left: 5%;/* Margen izquierdo */
+    }
+  
+    .logoPay {/* Logo */
+      font-size: 1rem;/* Tamaño del logo */
+      height: 30px;/* Altura del logo */
+      margin: 10px 0px 20px 0px;/* Margen del logo */
+    }
+
+    .logoPay p{/* Texto del logo */
+        margin: 0px 0px 6px 0px;/* Margen del texto del logo */
+    }
+  
+    .textPay p {/* Texto de pago exitoso */
+      font-size: 16px;/* Tamaño del texto */
+    }
+  
+    .buttomPay {/* Botón de pago exitoso */
+      width: 80%;/* Ancho del botón */
+    }
+  }
+
+
+  @media screen and (max-width: 655px) {/* Media queries para pantallas pequeñas */
+    .mainBoxPay {/* Contenedor principal */
+      width: 90%;/* Ancho del componente */
+      margin-left: 5%;/* Margen izquierdo */
+    }
+  
+    .logoPay {/* Logo */
+      font-size: 1rem;/* Tamaño del logo */
+      height: 30px;/* Altura del logo */
+      margin: 10px 0px 20px 0px;/* Margen del logo */
+    }
+
+    .logoPay p{/* Texto del logo */
+        margin: 0px 0px 6px 0px;/* Margen del texto del logo */
+    }
+  
+    .textPay p {/* Texto de pago exitoso */
+      font-size: 16px;/* Tamaño del texto */
+    }
+  
+    .buttomPay {/* Botón de pago exitoso */
+      width: 80%;/* Ancho del botón */
+    }
+  }
+
+
+
+ 

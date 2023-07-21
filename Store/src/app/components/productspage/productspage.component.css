@@ -1,0 +1,134 @@
+* {
+  text-decoration: none;
+}
+
+.productCard {
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1%;
+  border: 1px solid #ccc;
+  background-color: #ffff;
+  border-radius: 5px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+  height: 100%;
+  /* Ajusta la altura deseada para las tarjetas */
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.productsTitle {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  color: #000;
+  margin-top: 5%;
+  margin-bottom: -2em;
+  font-family: helvetica, sans-serif;
+}
+
+.productTitle {
+  text-transform: uppercase;
+  font-size: 100%;
+  margin: 1%;
+  padding: 0;
+  text-align: left;
+  color: #000;
+  margin-bottom: 30px;
+  font-family: helvetica, sans-serif;
+
+}
+
+.productDescription {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: gray;
+  margin-bottom: 1em;
+  font-family: helvetica, sans-serif;
+}
+
+.productPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000;
+  margin-bottom: 1em;
+  font-family: helvetica, sans-serif;
+}
+
+.productGrid {
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.productImage {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .productGrid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* Cambiar la estructura de la cuadrícula para que los productos se muestren en una fila */
+    justify-items: center;
+    /* Centrar los elementos de la cuadrícula horizontalmente */
+    padding: 0;
+    /* Eliminar el relleno en la cuadrícula */
+  }
+
+  .productCard {
+    display: flex;
+    flex-direction: column;
+    align-items: cent   er;
+    padding: 5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+  }
+
+  .productImage {
+    width: 100%;
+    /* Hacer que las imágenes de los productos ocupen el ancho completo */
+  }
+
+  .productsTitle {
+    margin-bottom: 1em;
+  }
+}
+/* 
+@media screen and (max-width: 330px) {
+  .productsTitle {
+    font-size: 40px;
+  }
+
+  .productCard {
+    width: 150px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .productsTitle {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .productCard {
+    width: 130px;
+    height: 250px;
+  }
+} */

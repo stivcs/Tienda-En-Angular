@@ -1,0 +1,8 @@
+.grid-container {
+  margin: 2% 5% 5% 5%;
+}
+
+.MainContent {
+  display: flex 1 1 auto;
+  flex-direction: row;
+}

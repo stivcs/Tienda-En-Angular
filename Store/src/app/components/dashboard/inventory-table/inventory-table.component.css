@@ -1,0 +1,18 @@
+.full-width-table {
+  width: 100%;
+  margin: 0 5%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 720px) {
+  mat-elevation-z8{
+    padding: 0 10;
+  }
+  .id {
+    display: none;
+  }
+}

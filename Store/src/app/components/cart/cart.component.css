@@ -1,0 +1,91 @@
+
+
+/* Estilos que se aplican al carrito de compras */
+
+.principalCartContainer{
+  margin: 3vh 0;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+.cart{
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 0 3px 6px #00000029;
+  border: 1px solid #C4C4C4;
+  border-radius: 50px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+  
+  /* Estilos que se aplican al título del carrito de compras */
+  .cart h1 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Define el margen inferior del título */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%; /* Define el ancho máximo del título */
+    padding: 0 20px; /* Define el espacio interno izquierdo y derecho del título */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y alto del título */
+    font: normal bold 40px/48px Helvetica;
+  }.cartItems {
+    background-color: white ;
+    display: flex; /* Aplica el modelo de caja flexible */
+    flex-direction: column; /* Define la dirección de los elementos hijos en columna */
+    align-items: center; /* Alinea los elementos hijos al centro en el eje transversal */
+    align-items: start;
+    margin-top: 10px; /* Define el margen superior de los elementos */
+    width: 100%; /* Define el ancho de los elementos */
+  }
+  .checkout {
+    margin-top: 10px; /* Define el margen superior de la sección de pago */
+    text-align: center; /* Centra el texto en la sección de pago */
+  }
+  
+  /* Estilos que se aplican a los párrafos en la sección de pago del carrito de compras */
+  .checkout p {
+    font: normal bold 20px/48px Helvetica;;
+    margin-bottom: 5px; /* Define el margen inferior de los párrafos en la sección de pago */
+  }
+  
+  /* Estilos que se aplican a los botones en la sección de pago del carrito de compras */
+
+  .checkout button {
+    text-decoration: none;
+    margin-right: 10px; /* Define el margen derecho de los botones en la sección de pago */
+    background-color: #ffffff; /* Define el color de fondo de los botones en la sección de pago */
+    color: #000000; /* Define el color de texto de los botones en la sección de pago */
+    border: none; /* Quita el borde de los botones en la sección de pago */
+    border-radius: 4px; /* Define el radio de los bordes de los botones en la sección de pago */
+    padding: 5px 10px; /* Define el espacio interno de los botones en la sección de pago */
+    cursor: pointer; /* Muestra un cursor al pasar por encima de los botones en la sección de pago */
+    font-size: 14px; /* Define el tamaño de fuente de los botones en la sección de pago */
+    font-weight: bold; /* Define el grosor de fuente de los botones en la sección de pago */
+    transition: background-color 0.3s; /* Agrega una transición al color de fondo de los botones en la sección de pago */
+  }
+  
+  /* Estilos que se aplican a los botones en la sección de pago del carrito de compras al pasar el cursor */
+
+  .checkout button:hover {
+    color: white;
+    background-color: #000000; /* Define el color de fondo de los botones en la sección de pago al pasar el cursor */
+  }
+  .checkout button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  .checkout button:hover a{
+    color: white;
+  }
+  

@@ -1,0 +1,94 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.loginContainer {
+  background-color: white; /* Establece el color de fondo del contenedor de inicio de sesión */
+  width: 100vw; /* Establece el ancho del contenedor al 100% del ancho de la ventana */
+  height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro del contenedor */
+  justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+  align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+
+}
+
+.principalContainerAlert {
+  display: flex;/* Establece el contenedor principal del formulario como un bloque */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Establece la dirección de flexión de los elementos dentro del contenedor principal como columna */
+  background-color: white; /* Establece el color de fondo del contenedor principal */
+  width: 70%; /* Establece el ancho del contenedor principal */
+  height: 50%; /* Establece la altura del contenedor principal */
+  box-shadow: 0px 3px 6px #00000029; /* Agrega una sombra al contenedor principal */
+  border: 1px solid #C4C4C4; /* Agrega un borde al contenedor principal */
+  border-radius: 50px; /* Agrega bordes redondeados al contenedor principal */
+  opacity: 1; /* Establece la opacidad del contenedor principal */
+}
+.titleLoginContainer {
+  text-align: center; /* Centra el texto del título del formulario de inicio de sesión */
+  margin: 50px; /* Establece los márgenes superiores e inferiores del título */
+  justify-content: center;
+  font-family: Helvetica, sans-serif; /* Establece la fuente del título */
+  font: bold; /* Establece el estilo de fuente en negrita */
+  font-weight: bold; /* Establece el grosor de la fuente en negrita */
+}
+
+@media(max-width: 600px){
+  .principalContainerAlert{
+    width: 300px;
+
+  }
+  .titleLoginContainer{
+    font-size: 13px;    
+  }
+  .principalContainerAlertForm{
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+.titleLoginContainer h1, h2 {
+  width: 100%; /* Establece el ancho del título al 100% del contenedor */
+}
+
+
+.principalContainerAlertForm{
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro del formulario de inicio de sesión */
+  justify-content: center; /* Distribuye los elementos de manera uniforme en el espacio disponible */
+  align-items: center; /* Centra verticalmente los elementos dentro del formulario de inicio de sesión */
+  flex-direction: column;
+}
+
+.buttonLoginContainer{
+  font-family: Helvetica, sans-serif; /* Establece la fuente de los contenedores de botones de inicio de sesión y registro */
+  font: bold; /* Establece el estilo de fuente en negrita */
+  font-weight: bold; /* Establece el grosor de la fuente en negrita */
+  width: 40%; /* Establece el ancho de los contenedores de botones de inicio de sesión y registro */
+  display: flex; /* Utiliza flexbox para alinear los elementos dentro de los contenedores */
+  flex-direction: column; /* Establece la dirección de flexión de los elementos dentro de los contenedores como columna */
+  margin  : 10px 20px; /* Establece los márgenes de los contenedores de botones de inicio de sesión y registro */
+}
+
+.buttonLoginContainer button{
+  background-color: transparent; /* Establece el color de fondo transparente para el botón de inicio de sesión */
+  border: none; /* Elimina el borde del botón de inicio de sesión */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón de inicio de sesión */
+  transition: background-color 0.3s; /* Agrega una transición suave al color de fondo del botón de inicio de sesión */
+}
+
+
+#buttonLogin:hover{
+  background-color: #131313; /* Cambia el color de fondo del botón de inicio de sesión al pasar el mouse sobre él */
+}
+
+#buttonLogin{
+  color: white; /* Establece el color del texto en blanco para los botones de inicio de sesión y registro */
+  width: 100%; /* Establece el ancho al 100% para los botones de inicio de sesión y registro */
+  height: 40px; /* Establece la altura en 40px para los botones de inicio de sesión y registro */
+  background: #000000; /* Establece el fondo en negro (#000000) para los botones de inicio de sesión y registro */
+  border-radius: 10px; /* Agrega un borde redondeado de 10px a los botones de inicio de sesión y registro */
+  margin-top: inherit;
+}
+
+
+

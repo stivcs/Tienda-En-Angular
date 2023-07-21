@@ -1,0 +1,34 @@
+<!-- Estructura de la página de inicio de sesión -->
+<div class="loginContainer">
+  <div class="principalContainerLogin">
+    <!-- Título de la página de inicio de sesión -->
+    <div class="titleLoginContainer">
+      <h1>INICIAR SESIÓN</h1>
+      <div class="principalContainerLoginForm">
+        <!-- Evento ngSubmit que se activa al enviar el formulario -->
+        <form class="formularioInput" (ngSubmit)="login()">
+          <!-- Campo de entrada para el nombre de usuario -->
+          <div class="usernameLoginContainer">
+            <label for="username" style="margin: 0 20px;" class="username">Usuario:</label>
+            <input type="text" id="usernameLogin" [(ngModel)]="username" name="username" required>
+          </div>
+          <!-- Campo de entrada para la contraseña -->
+          <div class="passwordLoginContainer">
+            <label for="password" style="margin: 0 20px;" class="userpassword">Contraseña:</label>
+            <input type="password" id="passwordLogin" [(ngModel)]="password" name="password" required>
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <div class="buttonLoginContainer">
+            <button id="buttonLogin" type="submit">INICIAR SESIÓN</button>
+          </div>
+          <!-- Botón para registrarse -->
+          <div class="buttonRegisterContainer">
+            <button routerLink="/register" id="buttonRegister">REGISTRARSE</button>
+          </div>
+          <div class="buttonRegisterContainer">
+            <button routerLink="/" id="buttonRegister">ATRÁS</button>
+          </div>
+
+        </form>
+  </div>
+</div>

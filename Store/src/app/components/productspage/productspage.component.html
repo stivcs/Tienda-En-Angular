@@ -1,0 +1,29 @@
+<app-nav></app-nav>
+<!-- Encabezado de nivel 1 con la clase "productsTitle" -->
+<h1 class="productsTitle">ELIGE TU FAVORITO</h1>
+
+<!-- Contenedor de estilo de cuadrícula con la clase "productGrid" -->
+<div class="productGrid">
+
+  <!-- Directiva *ngFor para iterar sobre la matriz "shirts" -->
+  <div *ngFor="let shirt of shirts; let i = index">
+
+    <!-- Contenedor de la tarjeta de producto con la clase "productCard" -->
+    <a href={{rutes[i]}}><div class="productCard">
+
+      <!-- Imagen del producto con la URL enlazada a la propiedad "imageURL" del primer objeto "productImages" -->
+      <img [src]="shirt.productImages[0].imageURL" alt="Shirt Image" class="productImage"/>
+
+      <!-- Título del producto con la propiedad "productName" -->
+      <h2 class="productTitle">{{ shirt.productName }}</h2>
+
+      <!-- Descripción del producto (comentado) -->
+      <!-- <p class="productDescription">{{ shirt.description }}</p> -->
+      <!-- Precio del producto con la propiedad "price" -->
+      <p class="productPrice">${{ shirt.price }}</p>
+
+    </div></a> <!-- Fin del contenedor de la tarjeta de producto -->
+
+  </div> <!-- Fin de la iteración *ngFor -->
+
+</div> <!-- Fin del contenedor de estilo de cuadrícula -->

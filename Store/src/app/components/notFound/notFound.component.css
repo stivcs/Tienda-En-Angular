@@ -1,0 +1,49 @@
+.mainBox {
+  margin: 0 auto;
+  margin-top: 10%;
+  width: 35%; /* Ancho del 35% del contenedor padre */
+  min-width: 300px; /* Evita que el componente sea más pequeño que 300px de ancho */
+  display: flex; /* Aplica el modelo de caja flexible */
+  flex-direction: column; /* Establece la dirección de los elementos internos como columna */
+  justify-content: center; /* Centra verticalmente los elementos internos */
+  align-items: center; /* Centra horizontalmente los elementos internos */
+  height: 50%; /* Altura del 50% del contenedor padre */
+  border: 1px solid gray; /* Agrega un borde de 1px de grosor y color gris */
+  border-radius: 2em; /* Agrega un radio de borde del 10% */
+  font-family: Helvetica; /* Establece la fuente del texto como Helvetica */
+  box-shadow: 0px 10px 8px 0px black; /* Agrega una sombra al contenedor */
+  margin-bottom: 10vh; /* Margen inferior de 15px */
+
+}
+
+.number, .notFound, .koaj, .image {
+  margin: 10px; /* Margen de 10px para los elementos con las clases .number, .notFound, .koaj y .image */
+  text-align: center; /* Centra el texto horizontalmente dentro de los elementos */
+}
+
+.koaj {
+  display: flex; /* Aplica el modelo de caja flexible */
+  justify-content: center; /* Centra horizontalmente los elementos internos */
+  background-color: black; /* Establece el color de fondo como negro */
+  color: white; /* Establece el color del texto como blanco */
+  font-size: 1rem; /* Establece el tamaño de fuente como 1rem */
+  width: 20%; /* Ancho del 20% del contenedor padre */
+  min-width: 100px; /* Asegura que el texto "KOAJ" no se colapse en pantallas pequeñas */
+  height: 60%; /* Altura del 60% del contenedor padre */
+  margin: 0px 0px 40px 0px; /* Margen de 0px arriba, 0px derecha, 40px abajo y 0px izquierda */
+  border-radius: 2em; /* Agrega un radio de borde del 10% */
+  align-items: center; /* Centra horizontalmente los elementos internos */
+}
+
+.number {
+  font-size: 60px; /* Establece el tamaño de fuente como 60px */
+  font-weight: bold; /* Establece el estilo de fuente como negrita */
+  height: 90px; /* Altura de 90px */
+}
+
+.notFound {
+  font-size: 30px; /* Establece el tamaño de fuente como 30px */
+  font-weight: bold; /* Establece el estilo de fuente como negrita */
+}
+
+

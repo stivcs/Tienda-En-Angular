@@ -1,0 +1,28 @@
+<app-nav></app-nav>
+<div class="container" *ngIf="product" >         <!-- *ngIf="product" para que no se muestre el componente hasta que se haya cargado el producto -->
+  
+  <div class="principalContainer" >              <!-- contenedor principal-->
+    
+    <div class="images">                        <!-- contenedor de imagenes -->         
+      <img class="mainImage" [src]="selectedImage || product.productImages[0].imageURL" alt="Card image cap"> <!-- [src]="selectedImage || product.productImages[0].imageURL" para que se muestre la imagen seleccionada o la primera imagen del array -->
+      <div class="littleImages">                <!-- contenedor de imagenes pequeñas -->
+        <img *ngFor="let image of product.productImages" [src]="image.imageURL" alt="" (click)="selectImage(image.imageURL)" [class.selected]="image.imageURL === selectedImage"> <!-- *ngFor="let image of product.productImages" para que se muestren todas las imagenes del array -->
+      </div>                                    <!-- [src]="image.imageURL" para que se muestren las imagenes del array -->
+    </div>
+
+    <div class="description">                   <!-- contenedor de descripcion -->
+      <h2 class="title">{{ product.productName }}</h2>  <!-- {{ product.productName }} para que se muestre el nombre del producto -->
+      <p class="descriptionText">{{ product.description }}</p>  <!-- {{ product.description }} para que se muestre la descripcion del producto -->
+      <div class="below">                       <!-- contenedor de precio y boton -->
+        <p class="price">${{ product.price }}</p> <!-- {{ product.price }} para que se muestre el precio del producto -->
+        <div class="quantity">
+          <button (click)="decreaseQuantity()">-</button>
+          <span>{{ quantity }}</span>
+          <button (click)="increaseQuantity()">+</button>
+          <a class="btn-primary" routerLink="/cart" (click)="addToCart()">Add to cart</a> <!-- boton -->
+        </div>
+        
+      </div>                                    <!-- fin contenedor de precio y boton -->
+    </div>
+  </div>
+</div>

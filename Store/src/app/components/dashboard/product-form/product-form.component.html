@@ -1,0 +1,70 @@
+<app-nav></app-nav>
+<div class="MainContent">
+  <mat-card class="example-card">
+    <mat-toolbar>
+      <span  class="topTitle">Edit Product</span>
+    </mat-toolbar>
+    <form class="Formulario" (ngSubmit)="updateProduct()" #productForm="ngForm">
+      <mat-card-header>
+        <mat-form-field>
+          <mat-label for="productName">Product Name:</mat-label>
+          <input matInput type="text" name="productName" [(ngModel)]="product.product.productName" required />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Description:</mat-label>
+          <textarea matInput name="description" [(ngModel)]="product.product.description" required></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Price:</mat-label>
+          <input matInput type="number" name="price" [(ngModel)]="product.product.price" required />
+        </mat-form-field>
+        <div>
+          <mat-form-field>
+            <mat-label>Quantity:</mat-label>
+            <input matInput type="number" name="quantity" [(ngModel)]="product.quantity" required />
+          </mat-form-field>
+          <button mat-mini-fab class="indicator" color="primary" type="button" (click)="product.quantity = product.quantity - 1">
+            <mat-icon>exposure_neg_1</mat-icon>
+          </button>
+          <button mat-mini-fab class="indicator" color="primary" type="button" (click)="product.quantity = product.quantity + 1">
+            <mat-icon>exposure_plus_1</mat-icon>
+          </button>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Stock Min:</mat-label>
+            <input matInput type="number" name="stockMin" [(ngModel)]="product.stockMin" required />
+          </mat-form-field>
+          <button mat-mini-fab class="indicator" color="accent" type="button" (click)="product.stockMin = product.stockMin - 1">
+            <mat-icon>exposure_neg_1</mat-icon>
+          </button>
+          <button mat-mini-fab class="indicator" color="accent" type="button" (click)="product.stockMin = product.stockMin + 1">
+            <mat-icon>exposure_plus_1</mat-icon>
+          </button>
+        </div>
+        <div>
+          <mat-form-field>
+            <mat-label>Stock Max:</mat-label>
+            <input matInput type="number" name="stockMax" [(ngModel)]="product.stockMax" required />
+          </mat-form-field>
+          <button mat-mini-fab class="indicator" color="accent" type="button" (click)="product.stockMax = product.stockMax - 1">
+            <mat-icon>exposure_neg_1</mat-icon>
+          </button>
+          <button mat-mini-fab class="indicator" color="accent" type="button" (click)="product.stockMax = product.stockMax + 1">
+            <mat-icon>exposure_plus_1</mat-icon>
+          </button>
+        </div>
+      </mat-card-header>
+      <mat-toolbar class="actionbuttons">
+        <mat-card-actions>
+          <button class="primary" mat-raised-button color="primary" type="button" (click)="goBack()">
+            Back
+          </button>
+          <button class="primary" mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">
+            Update
+          </button>
+        </mat-card-actions>
+      </mat-toolbar>
+    </form>
+  </mat-card>
+</div>

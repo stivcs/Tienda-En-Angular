@@ -1,0 +1,79 @@
+/* Estilos del css para el footer */
+
+*{/* Estilos para todos los elementos */
+  margin-top: 10px;/* Margen superior para todos los elementos */
+  padding: 0;/* Espaciado interno para todos los elementos */
+}
+
+
+.footerContainer {
+  display: flex; /* Utiliza el modelo de caja flexible */
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  background-color: black; /* Color de fondo del footer */
+  padding: 2%; /* Espaciado interno del footer */
+  width: 100%; /* Ancho completo del footer */
+  margin-left: 0px;
+  position: relative;
+}
+
+.footerDevelopers {
+  font-size: 14px; /* Tamaño de fuente para el contenido de desarrolladores */
+  color: white; /* Color de texto para el contenido de desarrolladores */
+}
+
+.footerDevelopers p {
+  font-size: 16px; /* Tamaño de fuente para los párrafos dentro del contenido de desarrolladores */
+  margin-bottom: 8px; /* Margen inferior para los párrafos dentro del contenido de desarrolladores */
+}
+
+.footerDevelopers ul {
+  font-size: 12px; /* Tamaño de fuente para las listas no ordenadas dentro del contenido de desarrolladores */
+  list-style: none; /* Elimina los estilos de lista predeterminados */
+  column-count: 8; /* Divide la lista en 8 columnas */
+}
+
+.footerDevelopers li {
+  margin-bottom: 20px; /* Margen inferior para cada elemento de la lista dentro del contenido de desarrolladores */
+}
+
+li {
+  text-decoration: none; /* Elimina la decoración de texto predeterminada */
+  font-size: 15px; /* Tamaño de fuente para los elementos de lista */
+}
+
+.footerDevelopers a {
+  text-decoration: none; /* Elimina la decoración de texto para los enlaces dentro del contenido de desarrolladores */
+  color: white; /* Color de texto para los enlaces dentro del contenido de desarrolladores */
+}
+
+.footerDevelopers a:hover {
+  text-decoration: underline; /* Subraya los enlaces dentro del contenido de desarrolladores al pasar el cursor sobre ellos */
+}
+
+.footerLegal {
+  font-size: 14px; /* Tamaño de fuente para el contenido legal del footer */
+  color: white; /* Color de texto para el contenido legal del footer */
+  margin-top: 8px; /* Margen superior para el contenido legal del footer */
+}
+
+footer {
+  background-color: black; /* Color de fondo del footer */
+  width: 100%; /* Ancho completo del footer */
+  display: flex; /* Utiliza el modelo de caja flexible */
+  position: relative;
+  top: 100%; /* Posiciona el footer de forma absoluta */
+
+}
+
+/* Estilos para hacer el footer responsive */
+@media screen and (max-width: 768px) {
+  .footerDevelopers ul {
+    column-count: 2; /* Cambiar el número de columnas a 2 en pantallas más pequeñas */
+  }
+
+  .footerDevelopers{
+    margin-top: 15px;/* Cambiar el margen superior a 15px en pantallas más pequeñas */
+  }
+}

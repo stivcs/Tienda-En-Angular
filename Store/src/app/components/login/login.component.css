@@ -1,0 +1,152 @@
+.loginContainer {
+    background-color: white; /* Establece el color de fondo del contenedor de inicio de sesión */
+    width: 100vw; /* Establece el ancho del contenedor al 100% del ancho de la ventana */
+    height: 100vh; /* Establece la altura del contenedor al 100% de la altura de la ventana */
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+.titleLoginContainer {
+    text-align: center; /* Centra el texto del título del formulario de inicio de sesión */
+    margin: 37px 0 40px 0; /* Establece los márgenes superiores e inferiores del título */
+    font-family: Helvetica, sans-serif; /* Establece la fuente del título */
+    font: bold; /* Establece el estilo de fuente en negrita */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+}
+
+.titleLoginContainer h1 {
+    width: 100%; /* Establece el ancho del título al 100% del contenedor */
+}
+
+.principalContainerLogin {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 55%;
+  height: 100%;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #C4C4C4;
+  border-radius: 50px;
+  opacity: 1;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.buttonRegisterContainer {
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del contenedor de botones de registro */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor de botones de registro */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor de botones de registro */
+    margin-bottom: 115px; /* Establece el margen inferior del contenedor de botones de registro */
+}
+
+.principalContainerLoginForm form {
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro del formulario de inicio de sesión */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el espacio disponible */
+    align-items: center; /* Centra verticalmente los elementos dentro del formulario de inicio de sesión */
+    flex-direction: column; /* Establece la dirección de flexión de los elementos en el formulario de inicio de sesión como columna */
+}
+
+.usernameLoginContainer,
+.passwordLoginContainer {
+    font-family: Helvetica, sans-serif; /* Establece la fuente de los contenedores de nombre de usuario y contraseña */
+    font: bold; /* Establece el estilo de fuente en negrita */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    width: 80%; /* Establece el ancho de los contenedores de nombre de usuario y contraseña */
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro de los contenedores */
+    flex-direction: column; /* Establece la dirección de flexión de los elementos dentro de los contenedores como columna */
+    margin  : 10px 20px; /* Establece los márgenes de los contenedores de nombre de usuario y contraseña */
+}
+
+.usernameLoginContainer input{
+    padding: 0 10px; /* Establece el relleno izquierdo y derecho de los campos de entrada de nombre de usuario */
+    font-size: 20px; /* Establece el tamaño de fuente de los campos de entrada de nombre de usuario */
+}
+
+.passwordLoginContainer input{
+    padding: 0 10px; /* Establece el relleno izquierdo y derecho de los campos de entrada de contraseña */
+    font-size: 20px; /* Establece el tamaño de fuente de los campos de entrada de contraseña */
+}
+
+.buttonLoginContainer,
+.buttonRegisterContainer {
+    font-family: Helvetica, sans-serif; /* Establece la fuente de los contenedores de botones de inicio de sesión y registro */
+    font: bold; /* Establece el estilo de fuente en negrita */
+    font-weight: bold; /* Establece el grosor de la fuente en negrita */
+    width: 40%; /* Establece el ancho de los contenedores de botones de inicio de sesión y registro */
+    display: flex; /* Utiliza flexbox para alinear los elementos dentro de los contenedores */
+    flex-direction: column; /* Establece la dirección de flexión de los elementos dentro de los contenedores como columna */
+    margin  : 10px 20px; /* Establece los márgenes de los contenedores de botones de inicio de sesión y registro */
+}
+
+.buttonLoginContainer button{
+    background-color: transparent; /* Establece el color de fondo transparente para el botón de inicio de sesión */
+    border: none; /* Elimina el borde del botón de inicio de sesión */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de inicio de sesión */
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo del botón de inicio de sesión */
+}
+
+.buttonRegisterContainer button{
+    background-color: transparent; /* Establece el color de fondo transparente para el botón de registro */
+    border: none; /* Elimina el borde del botón de registro */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón de registro */
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo del botón de registro */
+}
+
+#buttonLogin:hover{
+    background-color: #131313; /* Cambia el color de fondo del botón de inicio de sesión al pasar el mouse sobre él */
+}
+#buttonRegister:hover {
+    background-color: #131313; /* Cambia el color de fondo del botón de registro al pasar el mouse sobre él */
+}
+
+#usernameLogin,
+#passwordLogin {
+    width: 100%; /* Establece el ancho al 100% para los campos de entrada de nombre de usuario y contraseña */
+    height: 40px; /* Establece la altura en 40px para los campos de entrada de nombre de usuario y contraseña */
+    border: 1px solid #707070; /* Agrega un borde de 1px sólido de color #707070 a los campos de entrada */
+    background: #FFFFFF; /* Establece el fondo en blanco (#FFFFFF) para los campos de entrada */
+    border-radius: 23px; /* Agrega un borde redondeado de 23px a los campos de entrada */
+    opacity: 1; /* Establece la opacidad en 1 para los campos de entrada */
+}
+
+#buttonLogin,
+#buttonRegister,
+#buttonBack{
+    color: white; /* Establece el color del texto en blanco para los botones de inicio de sesión y registro */
+    width: 100%;
+    min-height: 30px;/* Establece el ancho al 100% para los botones de inicio de sesión y registro */
+    height: 160%; /* Establece la altura en 40px para los botones de inicio de sesión y registro */
+    background: #000000; /* Establece el fondo en negro (#000000) para los botones de inicio de sesión y registro */
+    border-radius: 10px; /* Agrega un borde redondeado de 10px a los botones de inicio de sesión y registro */
+}
+.buttonRegisterContainer a{
+    width: 60%;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 460px) {
+    .titleLoginContainer{
+        font-size: 10px;
+    }
+    .username, .userpassword{
+        font-size: 12px;
+    }
+    #buttonLogin, #buttonRegister{
+        font-size: 12px;
+
+    }
+    .principalContainerLogin{
+        height: 450px;
+        width:95%;
+    }
+    .buttonRegisterContainer, .buttonRegisterContainer, .buttonLoginContainer {
+        width: 80%;
+    }
+}
+
+.formularioInput{
+  width: 100%;
+}

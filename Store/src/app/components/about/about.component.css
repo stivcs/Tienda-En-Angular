@@ -1,0 +1,139 @@
+/*Estable => set*/
+
+/* Estilos generales del documento */
+body {
+background-color: black; /* Set el color de fondo del cuerpo del documento en negro */
+color: white; /* Set el color del texto en blanco */
+font-family: Helvetica, Arial, sans-serif; /* Set la fuente del texto como "Helvetica", "Arial" o una fuente genérica sans-serif */
+}
+
+/*________________________________
+
+Estilos para el título "title_about_us" */
+.title_about_us {
+background-color: white; /* Set el color de fondo del elemento en blanco */
+color: black; /* Set el color del texto en negro */
+padding: 10px; /* Set un espacio de relleno de 10 píxeles alrededor del elemento */
+font-family: Helvetica, Arial, sans-serif; /* Set la fuente del texto como "Helvetica", "Arial" o una fuente genérica sans-serif */
+font-size: 100px; /* Set el tamaño de fuente del texto en 100 píxeles */
+text-transform: uppercase; /* Transforma el texto a letras mayúsculas */
+}
+
+/*container: adentro está "nosotros" */
+.container {
+font-size: 100px; /* Set el tamaño de fuente del texto en 100 píxeles */
+padding-bottom: 0; /* Set un espacio de relleno de 0 píxeles en la parte inferior del elemento */
+text-transform: uppercase; /* Transforma el texto a letras mayúsculas */
+margin: 0; /* Set márgenes de 0 píxeles en los cuatro lados del elemento */
+}
+
+.title_about_us,
+.container,
+.container_text {
+padding-left: 5%; /* Set un espacio de relleno de 5% del ancho del elemento en el lado izquierdo */
+}
+
+/* Estilos para el contenedor de texto "container_text" */
+.container_text {
+width: 85%; /* Set el ancho del elemento en 85% del ancho de su contenedor padre */
+border: 1px solid white; /* Set un borde de 1 píxel sólido de color blanco alrededor del elemento */
+font-size: 30px; /* Set el tamaño de fuente del texto en 30 píxeles */
+margin: 5%; /* Set márgenes de 5% del ancho del elemento en los cuatro lados */
+}
+
+/* Estilos para el contenedor de imágenes "container_img" */
+.container_img {
+display: flex; /* Set el contenedor como un flex container */
+flex-direction: row; /* Set la dirección de los elementos secundarios como fila */
+justify-content: space-between; /* Distribuye los elementos secundarios con espacio uniforme entre ellos */
+}
+
+/* Estilos para los elementos secundarios de "container_img" con clase "item" */
+.container_img .item {
+flex: 1; /* Set la flexibilidad del elemento para ocupar el espacio disponible */
+padding: 10px; /* Set un espacio de relleno de 10 píxeles alrededor del elemento */
+}
+
+/* Estilos específicos para pantallas con un ancho máximo de 768px */
+@media screen and (max-width: 775px) {
+/* Estilos para el contenedor de imágenes "container_img" */
+.container_img {
+flex-direction: column; /* Cambia la dirección de los elementos secundarios a columna */
+}
+
+/* Estilos para los elementos secundarios de "container_img" con clase "item" */
+.container_img .item {
+flex: none; /* Deshabilita la flexibilidad del elemento */
+font-size: 35px; /* Set el tamaño de fuente del texto en 35 píxeles */
+}
+}
+
+/* Estilos para los elementos con clase "item" */
+.item {
+width: 50%; /* Set el ancho del elemento en 50% del ancho de su contenedor padre */
+margin-top: 5%; /* Set un margen superior de 5% del alto del elemento */
+}
+
+/* Estilos para las imágenes dentro de elementos con clase "item" */
+.item img {
+max-width: 80%; /* Set el ancho máximo de la imagen en 80% del ancho del elemento padre */
+height: auto; /* Ajusta la altura de la imagen automáticamente según su ancho */
+padding-left: 10%; /* Set un espacio de relleno de 10% del ancho del elemento en el lado izquierdo */
+}
+
+/* Estilos para los elementos de párrafo */
+p {
+display: block; /* Set el elemento como un bloque */
+font-size: 25px; /* Set el tamaño de fuente del texto en 25 píxeles */
+margin-block-start: 4em; /* Set un margen de bloque de inicio de 4 veces el tamaño de fuente */
+margin-block-end: 5em; /* Set un margen de bloque de final de 5 veces el tamaño de fuente */
+margin-inline-start: 9%; /* Set un margen de inicio de línea de 9% del ancho del elemento */
+margin-inline-end: 15px; /* Set un margen de final de línea de 15 píxeles */
+}
+
+@media screen and (max-width: 775px) {
+    /* Estilos para el contenedor de imágenes "container_img" */
+    #img2{
+        display: none;
+    }
+    .container_text{
+        font-size: 20px;
+    }
+    #title{
+        font-size: 50px;
+    }
+    .text_2_benefits{
+        font-size: 15px;
+    }
+    .container_img{
+        align-items: center;
+
+    }
+    /* Estilos para los elementos secundarios de "container_img" con clase "item" */
+    .container_img .item {
+    flex: none; /* Deshabilita la flexibilidad del elemento */
+    font-size: 35px; /* Set el tamaño de fuente del texto en 35 píxeles */
+    }
+    }
+
+@media screen and (max-width: 445px) {
+    /* Estilos para el contenedor de imágenes "container_img" */
+    .container_text{
+        font-size: 13px;
+    }
+    #title{
+        font-size: 35px;
+    }
+    .text_2_benefits{
+        font-size: 00px;
+    }
+    .container_img{
+        align-items: center;
+        
+    }
+    /* Estilos para los elementos secundarios de "container_img" con clase "item" */
+    .container_img .item {
+    flex: none; /* Deshabilita la flexibilidad del elemento */
+    font-size: 35px; /* Set el tamaño de fuente del texto en 35 píxeles */
+    }
+    }

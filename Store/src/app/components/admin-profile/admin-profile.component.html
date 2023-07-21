@@ -1,0 +1,52 @@
+<app-nav></app-nav>
+<mat-card class="MainContainer">
+  <mat-card-header>
+    <mat-card-title>Profile editing</mat-card-title>
+  </mat-card-header>
+    <form (ngSubmit)="updateUserData()" #productForm="ngForm">
+      <mat-card-content>
+      <div>
+        <mat-form-field class="fullname">
+          <mat-label>Your full name</mat-label>
+          <input matInput placeholder="Write your username" name="fullName" [(ngModel)]="user.fullName" required>
+        </mat-form-field>
+      </div>
+      <div class="user">
+      <mat-form-field class="username">
+        <mat-label>Your username</mat-label>
+        <input matInput placeholder="Write your username" name="username" [(ngModel)]="user.username" required>
+      </mat-form-field>
+      <mat-form-field class="password">
+        <mat-label>Your password</mat-label>
+        <input type="password" matInput placeholder="Write your username" name="password" [(ngModel)]="user.password" required>
+      </mat-form-field>
+    </div>
+      <div class="mail">
+        <mat-form-field class="mail">
+          <mat-label>Your email</mat-label>
+          <input type="email" matInput placeholder="Write your email" name="email" [(ngModel)]="user.email" required>
+        </mat-form-field>
+      </div>
+      <div>
+      <mat-form-field class="address">
+        <mat-label>Your address</mat-label>
+        <input type="text" matInput placeholder="Write your address" name="address" [(ngModel)]="user.address" required>
+      </mat-form-field>
+      <mat-form-field class="number">
+        <mat-label>Your phone number</mat-label>
+        <input type="tel" matInput placeholder="Write your username" name="phone" [(ngModel)]="user.phone" required>
+      </mat-form-field>
+      </div>
+    </mat-card-content>
+      <mat-card-actions>
+        <button class="primary" mat-raised-button color="primary" type="button" (click)="goBack()">
+          Back Home
+        </button>
+        <button class="primary" mat-raised-button color="primary" type="submit" [disabled]="productForm.invalid">
+          Update
+        </button>
+      </mat-card-actions>
+    </form>
+
+
+</mat-card>

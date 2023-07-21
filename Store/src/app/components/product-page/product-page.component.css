@@ -1,0 +1,374 @@
+* {
+    margin: 0;                                              /* Resetear margenes */               
+    padding: 0;                                             /* Resetear padding */      
+    box-sizing: border-box;                                 /* Para que el padding y el border no afecten al ancho y alto del elemento */
+    caret-color: transparent;                               /* Ocultar el cursor titilante */
+}
+
+.selected {
+    border: 2px solid rgb(0, 0, 0);                       /* Borde solido para el seleccionado */                    
+}
+
+/*------------------CANTIDAD DE ITEMS------------------*/
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin: 30px;
+  }
+  
+  .quantity button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .quantity span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+
+/*------------------CONTENEDOR PRINCIPAL------------------*/
+
+.principalContainer {                                       /* Contenedor principal */
+    margin: 0 auto;                                         /* Centrar el contenedor */      
+    width: 90%;                                             /* Ancho del contenedor */      
+    display: flex;                                          /* Mostrar en linea los elementos */
+    align-items: center;                                    /* Centrar verticalmente los elementos */
+    background: #F5F5F5 0% 0% no-repeat padding-box;      /* Color de fondo */    
+    box-shadow: 0px 3px 6px #00000029;                    /* Sombra del contenedor */
+    border-radius: 46px;                                    /* Borde redondeado */
+    opacity: 1;          
+                                       /* Opacidad del contenedor */
+}
+
+/*------------------IMAGENES------------------*/
+
+.images{                                                    /* Contenedor de las imagenes */
+    width: 50%;                                             /* Ancho del contenedor */
+    display: flex;                                          /* Mostrar en linea los elementos */    
+    flex-direction: column;                                 /* Mostrar los elementos en columna */
+    align-items: center;                                    /* Centrar verticalmente los elementos */   
+    justify-content: center;                                /* Centrar horizontalmente los elementos */
+}
+
+/*------------------IMAGENES PRINCIPAL------------------*/
+
+.mainImage{                                                 /* Contenedor de la imagen principal */
+    margin: 10px;                                           /* Margen de la imagen */
+    border-radius: 11px;                                    /* Borde redondeado */
+    width: 80%;                                             /* Ancho de la imagen */          
+    height: 80%;                                            /* Alto de la imagen */
+}
+
+/*------------------IMAGENES PEQUEÑAS------------------*/
+
+.littleImages {                                             /* Contenedor de las imagenes pequeñas */
+    display: flex;                                          /* Mostrar en linea los elementos */
+}
+
+.littleImages img {                                         /* Imagenes pequeñas */
+    width: 100px;                                           /* Ancho de la imagen */                                   
+    height: 100px;                                          /* Alto de la imagen */                   
+    margin: 10px;                                           /* Margen de la imagen */
+    border-radius: 10px;                                    /* Borde redondeado */
+}
+
+/*------------------BODY DE DESCRIPCION ------------------*/
+
+.description{                                               /* Contenedor de la descripcion */
+    width: 100%;                                            /* Ancho del contenedor */                          
+}
+
+/*--------------------------TITULO------------------------*/
+
+.title {    
+    width: 90%;                                             /* Ancho del contenedor */
+    padding: 0;                                             /* Resetear padding */
+    margin: 0;                                              /* Resetear margen */                 
+    font-family: Helvetica;                                 /* Tipo de fuente */
+    font-size: 60px;                                        /* Tamaño de la fuente */              
+    color: #000000;                                       /* Color de la fuente */
+}
+
+/*---------------------------DESCRIPCION--------------------*/
+
+.descriptionText {                                          /* Contenedor de la descripcion */                 
+    font-size: 20px;                                        /* Tamaño de la fuente */
+    font-family: Helvetica;                                 /* Tipo de fuente */
+    width: 90%;                                             /* Ancho del contenedor */
+    height: 90%;                                            /* Alto del contenedor */
+    background-color: #DDDDDD;                            /* Color de fondo */                    
+    box-shadow: 0px 3px 6px #00000029;                    /* Sombra del contenedor */      
+    border-radius: 11px;                                    /* Borde redondeado */
+    opacity: 1;                                             /* Opacidad del contenedor */
+    padding: 10px;                                          /* Agregar margen al texto */
+}
+
+
+/*------------------BOTON Y PRECIO------------------*/
+
+.below {                                                    /* Contenedor del boton y el precio */  
+    display: block;                                         /* Mostrar en linea los elementos */
+    margin-top: 20px;                                       /* Margen superior */
+}
+
+/*-----------------------PRECIO----------------------*/
+
+.price {                                                    /* Contenedor del precio */                         
+    width: 70%;                                             /* Ancho del contenedor */
+    color: #5D5D5D;                                       /* Color de la fuente */
+    font-size: 60px;                                        /* Tamaño de la fuente */                       
+    font-family: Helvetica;                                 /* Tipo de fuente */
+    font-weight: bold;                                      /* Grosor de la fuente */
+}   
+
+/*------------------BOTON ADD TO CART------------------*/
+
+
+.quantity .btn-primary {                                              /* Contenedor del boton */            
+    height: 40px;                                           /* Alto del contenedor */                  
+    width: 150px;                                             /* Ancho del contenedor */
+    float: right;                                           /* Flotar a la derecha */
+    border-radius: 20px;                                    /* Borde redondeado */                  
+    margin-left: 5px;                               /* Margen derecho */              
+    background-color: #000000;                            /* Color de fondo */            
+    color: #FFFFFF;                                       /* Color de la fuente */
+    font-size: 17px;                                        /* Tamaño de la fuente */
+    font-family: Helvetica;                                 /* Tipo de fuente */
+    font-weight: bold;                                      /* Grosor de la fuente */       
+    text-decoration: none;                                  /* Quitar decoracion de texto */
+    text-align: center;                                     /* Alinear texto al centro */
+    line-height: 42px;
+    cursor: pointer;                                      /*Altura de linea*/             
+                                      /* Margen inferior */
+}
+
+.quantity .btn-primary:hover {                                        /* Contenedor del boton al pasar el mouse */
+    background-color: #282828;                            /* Color de fondo */        
+    color: #FFFFFF;                                       /* Color de la fuente */
+    text-decoration: none;                                  /* Quitar decoracion de texto */
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 1100px) {
+    .quantity .btn-primary {
+        justify-content: center;
+        text-align: center;
+    }
+    .quantity span {
+    margin: 2px 10px;
+    font-size: 14px;
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 1073px) {
+    .title{
+        font-size: 40px;
+    }
+
+    .price{
+        font-size: 38px;
+    }
+
+    .quantity .btn-primary{
+        line-height: 40px;
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 844px) {
+    .littleImages img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .title,
+    .price {
+        font-size: 30px;
+    }
+
+    .quantity .btn-primary {
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width: 671px) {
+    .quantity .btn-primary {
+        font-size: 15px;
+    }
+}
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 571px) {
+    .quantity .btn-primary {
+        width: 150px;
+        font-size: 15px;
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 525px) {
+    .quantity .btn-primary {
+        font-size: 15px;
+        width: 130px;
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 488px) {
+    .images {
+        margin: 0;
+        width: 100%;
+    }
+
+    .images img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .littleImages img {
+        margin: 1px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .price{
+        font-size: 40px;
+    }
+
+    .quantity .btn-primary {
+        
+        width: 100px;
+        font-size: 12px;
+        
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 452px) {
+    .images {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .images img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .littleImages img {
+        margin: 1px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .littleImages {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .descriptionText {
+        font-family: Helvetica;
+        font-size: 10px;
+        width: 90%;
+ 
+    }
+
+    .price {
+        /*center vertically*/
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .below{
+        margin:10px;
+    }
+
+    .quantity .btn-primary {
+        height: 25px;
+        width: 50%;
+        margin-top: 5px;
+        border-radius: 12px;
+        font-size: 10px;
+        justify-content: center;
+        text-align: center;
+        line-height: 25px;
+        overflow-y: hidden;
+    }
+
+    .principalContainer {
+        border-radius: 15px;
+    }
+}
+
+/*------------------MEDIA QUERIES------------------*/
+
+@media (max-width: 380px) {
+
+    .quantity .btn-primary{
+        height: 18px;
+        font-size: 5px;
+        line-height: 15px;
+    }
+
+    .descriptionText {
+        font-size: 8px;
+    }
+    .quantity button {
+        padding: 3px 8px;
+        font-size: 10px;
+      }
+      
+      .quantity span {
+        margin: 0 9px;
+        font-size: 12px;
+      }
+}
+@media (max-width: 380px) {
+
+    .quantity button {
+        padding: 2px 6px;
+        font-size: 8px;
+      }
+      
+      .quantity span {
+        margin: 0 9px;
+        font-size: 10px;
+      }
+}
+
+@media (max-width: 300px) {
+
+    .quantity button {
+        padding: 1px 4px;
+        font-size: 8px;
+      }
+      
+      .quantity span {
+        margin: 0 8px;
+        font-size: 8px;
+      }
+}

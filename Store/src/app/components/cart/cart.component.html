@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<div class="principalCartContainer">
+  <div class="cart">
+    <div>
+      <h1>tu carrito de compras</h1>
+    </div>
+    <div class="cartItems">
+      <app-cart-item [cartId]="item" *ngFor="let item of cartIDArray"></app-cart-item>
+    </div>
+
+    <div class="checkout" *ngIf="totalAmount > 0">
+      <p>Total: ${{ totalAmount }}</p>
+      <button><a href="#">Continue Shopping</a></button>
+      <button (click)="checkout()">Checkout</button>
+    </div>
+  </div>
+</div>

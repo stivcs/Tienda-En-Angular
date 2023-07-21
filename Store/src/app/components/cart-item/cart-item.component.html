@@ -1,0 +1,13 @@
+<div class="cartItem">
+    <img [src]="image" />
+    <div class="description">
+      <p>{{ name }}</p>
+      <p>{{ price }}</p>
+      <div class="countHandler">
+        <button (click)="decreaseQuantity()">-</button>
+        <input type="number" [(ngModel)]="quantity" min="1" />
+        <button (click)="increaseQuantity()">+</button>
+        <button (click)="removeItem()">X</button>
+      </div>
+    </div>
+  </div>

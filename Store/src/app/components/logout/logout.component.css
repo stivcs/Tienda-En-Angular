@@ -1,0 +1,149 @@
+/* Estilos para el componente de cierre de sesión */
+.mainBoxLogOut {
+  margin: 0 auto;
+  margin-top: 10%;
+  /* linea de codigo para que el componente se ubique en la parte superior de la pagina */
+  width: 30%;
+  /* linea de codigo para que el componente tenga un ancho del 20% */
+  display: flex;
+  /* linea de codigo para que el componente sea flexible */
+  flex-direction: column;
+  /* linea de codigo para que el componente sea flexible en direccion de columna */
+  justify-content: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+  align-items: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+  border: 1px solid gray;
+  /* linea de codigo para que el componente tenga un borde de 1px de color gris */
+  border-radius: 2em;
+  /* linea de codigo para que el componente tenga un borde redondeado del 10% */
+  font-family: Helvetica;
+  /* linea de codigo para que el componente tenga una fuente de letra Helvetica */
+  box-shadow: 0px 5px 4px 0px black;
+  /* linea de codigo para darle una sombra al componente */
+  margin-bottom: 20vh;
+  /* linea de codigo para que el componente tenga un margen inferior de 15px */
+}
+
+/* Estilos para el logo de KOAJ */
+.logoLogOut {
+  cursor: default;
+  /* linea de codigo para que el componente tenga un cursor por defecto */
+  text-align: center;
+  /* linea de codigo para que el componente tenga un texto centrado */
+  background-color: black;
+  /* le da un color de fondo al componente */
+  color: white;
+  /* linea de codigo para que el componente tenga un color de letra blanco */
+  font-size: 1rem;
+  /* linea de codigo para que el componente tenga un tamaño de letra de 1rem */
+  width: 20%;
+  /* linea de codigo para que el componente tenga un ancho del 20% */
+  min-width: 100px;
+  /* linea de codigo para que el componente tenga un ancho minimo de 100px */
+  height: 60%;
+  /* linea de codigo para que el componente tenga un alto del 60% */
+  margin: 10px 0px 40px 0px;
+  /* linea de codigo para que el componente tenga un margen de 10px en la parte superior, 0px en la parte derecha, 40px en la parte inferior y 0px en la parte izquierda */
+  border-radius: 8px;
+  /* linea de codigo para que el componente tenga un borde redondeado del 8% */
+  align-items: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+}
+
+/* Estilos para el texto del logo de KOAJ */
+.logoLogOut p {
+  border: 5px 5px 5px 5px;
+  /* linea de codigo para que el componente tenga un borde de 5px */
+  font-size: 0.8rem;
+  /* linea de codigo para que el componente tenga un tamaño de letra de 0.8rem */
+  font-family: Helvetica;
+  /* linea de codigo para que el componente tenga una fuente de letra Helvetica */
+  font-weight: bold;
+  /* linea de codigo para que el componente tenga un texto en negrita */
+  text-align: center;
+  /* linea de codigo para que el componente tenga un texto centrado */
+  justify-content: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+}
+
+/* Estilos para el contenedor de texto */
+.textLogOut {
+  cursor: default;
+  /* linea de codigo para que el componente tenga un cursor por defecto */
+  text-align: center;
+  /* linea de codigo para que el componente tenga un texto centrado */
+  font-size: 1.5rem;
+  /* linea de codigo para que el componente tenga un tamaño de letra de 1.5rem */
+  font-family: Helvetica;
+  /* linea de codigo para que el componente tenga una fuente de letra Helvetica */
+  margin: 10px 5% 5% 5%;
+  /* linea de codigo para que el componente tenga un margen de 10px en la parte superior, 50px en la parte derecha, 50px en la parte inferior y 50px en la parte izquierda */
+  justify-content: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+}
+
+/* Estilos para el texto de sesión cerrada */
+.textLogOut p.p1 {
+  font-weight: bold;
+  /* linea de codigo para que el componente tenga un texto en negrita */
+  text-decoration: none;
+  /* linea de codigo para que el componente no tenga una decoracion de texto */
+  font-family: Helvetica;
+  /* linea de codigo para que el componente tenga una fuente de letra Helvetica */
+  color: black;
+  /* le da un color de letra al componente */
+  font-size: 20px;
+  /* linea de codigo para que el componente tenga un tamaño de letra de 20px */
+  justify-content: center;
+  /* linea de codigo para que el componente se ubique en el centro de la pagina */
+  margin: 0px 0px 10px 0px;
+  /* linea de codigo para que el componente tenga un margen de 0px en la parte superior, 0px en la parte derecha, 10px en la parte inferior y 0px en la parte izquierda */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.buttonLogOut {
+  border: 5px solid black;
+  /* le da un borde al componente */
+  width: 50%;
+  /* linea de codigo para que el componente tenga un ancho del 50% */
+  height: 30px;
+  /* linea de codigo para que el componente tenga un alto de 30px */
+  text-align: center;
+  /* linea de codigo para que el componente tenga un texto centrado */
+  border-radius: 10px;
+  /* linea de codigo para que el componente tenga un borde redondeado del 10% */
+  cursor: pointer;
+  /* linea de codigo para que el componente tenga un cursor de puntero */
+  margin: 0px 0px 20px 0px;
+  /* linea de codigo para que el componente tenga un margen de 0px en la parte superior, 0px en la parte derecha, 20px en la parte inferior y 0px en la parte izquierda */
+  background-color: black;
+  /* le da un color de fondo al componente */
+}
+
+/* Estilos para el texto del botón de inicio de sesión */
+.buttonLogOut a {
+  font: bold;
+  /* linea de codigo para que el componente tenga un texto en negrita */
+  color: white;
+  /* le da un color de letra al componente */
+  font-size: 20px;
+  /* linea de codigo para que el componente tenga un tamaño de letra de 20px */
+  text-decoration: none;
+  /* linea de codigo para que el componente no tenga una decoracion de texto */
+  font-family: Helvetica, sans-serif;
+  /* linea de codigo para que el componente tenga una fuente de letra Helvetica */
+}
+
+/* Media queries para pantallas pequeñas */
+@media screen and (max-width: 730px) {
+  .mainBoxLogOut {
+    width: 50%;
+    /* linea de codigo para que el componente tenga un ancho del 40% */
+    height: 50%;
+    /* linea de codigo para que el componente tenga un alto del 50% */
+    border: 5px 5px 5px 5px;
+    /* linea de codigo para que el componente tenga un borde de 5px */
+  }
+
+  }
